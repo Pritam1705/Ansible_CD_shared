@@ -8,7 +8,7 @@ def call(String url, String branch, String creds, String playbookName, String in
     // Create instances of required classes
      def gitCheckOut = new gitCheckOut()
      def wsClean=new wsClean()
-     def RoleExecution = new RoleExecution()
+     def RoleExecution= new RoleExecution()
 
     // Call methods with correct arguments
     wsClean.call()
