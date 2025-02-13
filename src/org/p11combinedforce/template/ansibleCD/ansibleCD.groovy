@@ -8,10 +8,10 @@ def call(String url, String branch, String creds, String playbookName, String in
     // Create instances of required classes
      def gitCheckOut = new gitCheckOut()
      def wsClean=new wsClean()
-     def RoleExecution= new RoleExecution()
+     def roleExecution= new roleExecution()
 
     // Call methods with correct arguments
     wsClean.call()
     gitCheckOut.call(url, branch, creds)  
-    def RoleExecution.call(inventoryPath, playbookPath)
+    roleExecution.call(inventoryPath, playbookPath)
 }
